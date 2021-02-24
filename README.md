@@ -17,7 +17,12 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `npm run test` to execute the unit tests via [Jest](https://jestjs.io/).
+Run `npm run test:watch` to run them in watch mode.
 
-## Further help
+## Running e2e
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+For this project, [Cypress](https://www.cypress.io/) is the tool for running e2e tests. Run `ng e2e` to run them.
+
+## CI pipeline
+
+Run `npm run ci` to lint the project, run Jest and Cypress tests and build the project for production. he build artifacts will be stored in the `dist/` directory.

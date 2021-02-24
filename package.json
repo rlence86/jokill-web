@@ -7,12 +7,11 @@
     "build": "ng build",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:ci": "jest --runInBand",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "cy:run": "cypress run",
     "e2e:ci": "start-server-and-test start http://localhost:4200 cy:run",
-    "ci": "ng lint && npm run test:ci && npm run e2e:ci && ng build"
+    "ci": "ng lint && npm run test && npm run e2e:ci && ng build --prod"
   },
   "private": true,
   "dependencies": {
