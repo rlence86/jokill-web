@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FooterComponent Renders correctly 1`] = `
+<app-footer>
+  <footer>
+     Made with ♥ in Malaga, Spain
+  
+  </footer>
+</app-footer>
+`;

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderComponent Renders correctly 1`] = `
+<app-header>
+  <header>
+    <h1>
+      Jokill
+    </h1>
+  </header>
+</app-header>
+`;

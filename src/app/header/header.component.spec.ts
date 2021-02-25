@@ -22,4 +22,8 @@ describe('HeaderComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`Renders correctly`, () => {
+    expect(fixture).toMatchSnapshot();
+  });
 });

@@ -22,4 +22,8 @@ describe('FooterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`Renders correctly`, () => {
+    expect(fixture).toMatchSnapshot();
+  });
 });
