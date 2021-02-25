@@ -1,7 +1,6 @@
-@import 'src/styles.scss';
 footer {
-    background-color: $color3;
-    color: $white;
+    background-color: var(--color3);
+    color: var(--color-white);
     height: 2.5rem;
     text-align: center;
 }
