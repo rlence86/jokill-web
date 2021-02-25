@@ -15,14 +15,14 @@ class DummyComponent {
   selector: 'app-header',
   template: '<div id="header-element">Header element</div>'
 })
-class DummyHeader {
+class DummyHeaderComponent {
 }
 
 @Component({
   selector: 'app-footer',
   template: '<div id="footer-element">Footer element</div>'
 })
-class DummyFooter {
+class DummyFooterComponent {
 }
 
 describe('AppComponent', () => {
@@ -39,8 +39,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         DummyComponent,
-        DummyHeader,
-        DummyFooter
+        DummyHeaderComponent,
+        DummyFooterComponent
       ],
     }).compileComponents();
     router = TestBed.inject(Router);
@@ -53,16 +53,16 @@ describe('AppComponent', () => {
   });
 
   it(`should have a header and a footer'`, () => {
-    const childHeadElement = fixture.debugElement.query(By.css("#header-element"));
+    const childHeadElement = fixture.debugElement.query(By.css('#header-element'));
     expect(childHeadElement.nativeElement.textContent).toBe('Header element');
-    const childFooterlement = fixture.debugElement.query(By.css("#footer-element"));
+    const childFooterlement = fixture.debugElement.query(By.css('#footer-element'));
     expect(childFooterlement.nativeElement.textContent).toBe('Footer element');
   });
 
   it(`should have routing working`, fakeAsync(() => {
     router.navigateByUrl('');
     tick();
-    const childRouter = fixture.debugElement.query(By.css("#dummy-element"));
+    const childRouter = fixture.debugElement.query(By.css('#dummy-element'));
     expect(childRouter.nativeElement.textContent).toBe('Dummy element');
   }));
 

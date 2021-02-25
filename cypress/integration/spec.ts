@@ -1,4 +1,6 @@
 it('loads examples', () => {
   cy.visit('/');
-  cy.contains('home-page works!');
+  cy.contains('header');
+  cy.contains('footer');
+  cy.contains('.home-page__container');
 });
