@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppComponent Renders correctly 1`] = `
+<app-root>
+  <div
+    class="app__container"
+  >
+    <app-header>
+      <div
+        id="header-element"
+      >
+        Header element
+      </div>
+    </app-header>
+    <router-outlet />
+    <ng-component>
+      <div
+        id="dummy-element"
+      >
+        Dummy element
+      </div>
+    </ng-component>
+    <app-footer>
+      <div
+        id="footer-element"
+      >
+        Footer element
+      </div>
+    </app-footer>
+  </div>
+</app-root>
+`;
