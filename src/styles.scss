@@ -2,3 +2,11 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+$color1: #044BD9;
+$color2: #0455BF;
+$color3: #033E8C;
+$color4: #F24405;
+$color5: #F21905;
+$white: #FFFFFF;

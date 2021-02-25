@@ -1,0 +1,13 @@
+@import 'src/styles.scss';
+.home-page {
+    &__container {
+        color: $color4;
+        padding: 0.5rem;
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.3rem;
+        }
+    }
+}
